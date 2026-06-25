@@ -1,11 +1,15 @@
-"""Laserline Research Controller entry point."""
+import sys
+from PySide6.QtWidgets import QApplication
+from gui.main_window import MainWindow
 
-import logging
 
+def main():
+    app = QApplication(sys.argv)
 
-def main() -> None:
-    logging.basicConfig(level=logging.INFO)
-    logging.info("Starting Laserline Research Controller")
+    window = MainWindow()
+    window.show()
+
+    sys.exit(app.exec())
 
 
 if __name__ == "__main__":

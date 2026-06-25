@@ -1,0 +1,43 @@
+application:
+  title: Laserline Research Controller
+  refresh_rate_ms: 100
+
+laser:
+
+  startup_sequence:
+    - threshold
+    - shutter
+    - laser
+
+  shutdown_sequence:
+    - laser
+    - shutter
+    - threshold
+
+digital_outputs:
+
+  threshold: 0
+  shutter: 2
+  laser_enable: 4
+  pilot: 6
+  reset: 7
+
+digital_inputs:
+
+  laser_on: 1
+  warning: 2
+  threshold: 3
+  fiber_break: 4
+  shutter_open: 5
+  shutter_closed: 0
+  error: 6
+
+analog_inputs:
+
+  temperature: 0
+  power_feedback: 1
+  current: 3
+
+analog_outputs:
+
+  power_setpoint: 0
