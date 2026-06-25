@@ -38,6 +38,26 @@ The project is intended for research laboratories and provides a modern software
 
 ---
 
+## Project skeleton
+
+```
+laserline-research-controller/
+│
+├── README.md
+├── LICENSE
+├── requirements.txt
+├── config.yaml
+├── app.py
+│
+├── gui/
+├── drivers/
+├── laser/
+├── logger/
+├── experiments/
+├── tests/
+└── docs/
+```
+
 ## Hardware
 
 Current development platform:
